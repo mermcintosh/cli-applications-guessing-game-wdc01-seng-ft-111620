@@ -27,7 +27,7 @@ end
 
 def getComputerNumber
   # Generate and store a random number between 1 and 6
-  $computerNumber = (rand(1..6) + 1).to_s
+  $computerNumber = rand(6).to_s
 end
 
 def getUserNumber
