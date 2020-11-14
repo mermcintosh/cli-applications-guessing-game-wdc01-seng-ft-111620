@@ -11,7 +11,6 @@ describe "Guessing CLI" do
     
     it "responds to a correct guess" do
       allow(self).to receive(:rand).and_return(1)
-      binding.pry
       expect(self).to receive(:gets).and_return("1")
       expect { run_guessing_game }.to output(/You guessed the correct number!/).to_stdout
     end
